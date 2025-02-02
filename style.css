@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 10px;
+}
+.container{
+    background: rgb(34,223,226);
+    background: linear-gradient(0deg, rgba(34,223,226,1) 0%, rgba(253,45,148,1) 95%);
+  width: 100%;
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child{
+    width:80vw;
+    height: 70vh;
+    background-color: black;
+    color: whitesmoke;
+    border:5px solid rgb(235, 244, 245);
+    box-shadow: 2px 2px 45px #21edd8;
+    position: relative;
+    
+}
+.rightbar{
+    background-image: linear-gradient(rgba(50, 196, 228, 0.782), rgba(243, 46, 223, 0.664));
+    position: absolute;
+    width: 90px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    clip-path: polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80% );
+}
+.hdsection{
+    padding-top: 12px;
+    font-family: 'Teko';
+    font-size: 3rem;
+    font-weight: 600;
+   
+}
+.mainbox{
+    background-color: orange;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbox > div{
+   width: 35%;
+   height: 90%;
+}
+.leftbox{
+    background-image: url('bdy.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:70%;
+
+}
+.rightbox{
+ background-image: url('happy.gif');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:80%;
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 5px;
+    }
+    .rightbar{
+        background-image: linear-gradient(rgba(50, 196, 228, 0.782), rgba(243, 46, 223, 0.664));
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        clip-path: polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80% );
+    }
+    .mainbox > div{
+        width: 55%;
+        height: 96%;
+     }
+     .leftbox{
+         background-image: url('bdy.gif');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size:80%;
+     
+     }
+     .rightbox{
+      background-image: url('happy.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:90%;
+     }
+     
+}
